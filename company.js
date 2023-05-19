@@ -10,13 +10,14 @@ const ndsParagraph =(obj)=> {
     if(!obj.dns["nameserver"]){
         obj.dns["nameserver"]=[]
     }
-    const nameserver=new Set([...nameserverConf,...obj.dns["nameserver"]])
+    const nameserver=new Set([...obj.dns["nameserver"],...nameserverConf])
     obj.dns["nameserver"]=[...nameserver]
 }
 
 const rulesConf=[
+    "DOMAIN-KEYWORD,winjoinit,DIRECT",
     "DOMAIN-SUFFIX,test-k3s.wj,DIRECT",
-    "DOMAIN,jsd.cdn.zzko.cn,DIRECT"
+    "DOMAIN-SUFFIX,jsd.cdn.zzko.cn,DIRECT"
 ]
 
 const rulesParagraph =(obj)=>{
