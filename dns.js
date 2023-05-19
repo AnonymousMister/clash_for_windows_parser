@@ -10,7 +10,6 @@ const dnsObject={
         "8.8.8.8"
     ],
     "nameserver":[
-        "192.168.1.8",
         ...dth
     ],
     "fallback":[...dth]
