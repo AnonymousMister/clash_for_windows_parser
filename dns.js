@@ -6,11 +6,11 @@ const dth=[
 
 const dnsObject={
     "default-nameserver":[
-        "94.140.14.49",
-        "8.8.8.8"
+        "223.5.5.5", 
+        "119.29.29.29",
     ],
     "nameserver":[
-        ...dth
+        "https://36fed11e.d.adguard-dns.com/dns-query",
     ],
     "fallback":[...dth]
 }
