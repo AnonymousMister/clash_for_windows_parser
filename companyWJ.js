@@ -27,6 +27,11 @@ const addCompanyProxies =(obj)=> {
     obj["proxy-groups"]=[...obj["proxy-groups"],...proxiesGroups]
 }
 
+const getWjrules=(obj)=>{
+    return `IP-CIDR,192.168.1.${obj}/24,wj,no-resolve`;
+}
+
+
 const rulesConf=[
     getWjrules(8),
     getWjrules(71),
@@ -38,9 +43,6 @@ const rulesConf=[
     getWjrules(227),
 ]
 
-const getWjrules=(obj)=>{
-    return `IP-CIDR,192.168.1.${obj}/24,wj,no-resolve`;
-}
 
 const rulesParagraph =(obj)=>{
     if(!obj.rules){
