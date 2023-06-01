@@ -33,14 +33,14 @@ const getWjrules=(obj)=>{
 
 
 const rulesConf=[
-    getWjrules(8),
-    getWjrules(71),
-    getWjrules(74),
-    getWjrules(70),
-    getWjrules(92),
-    getWjrules(95),
-    getWjrules(200),
-    getWjrules(227),
+    `IP-CIDR,192.168.1.8/24,wj,no-resolve`,
+    // getWjrules(71),
+    // getWjrules(74),
+    // getWjrules(70),
+    // getWjrules(92),
+    // getWjrules(95),
+    // getWjrules(200),
+    // getWjrules(227),
 ]
 
 
