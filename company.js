@@ -17,6 +17,7 @@ const ndsParagraph =(obj)=> {
 const rulesConf=[
     "DOMAIN-KEYWORD,winjoinit,DIRECT",
     "DOMAIN-KEYWORD,kitdown,DIRECT",
+    "DOMAIN,shwjxx.f3322.net,DIRECT",
     "DOMAIN-SUFFIX,test-k3s.wj,DIRECT",
     "DOMAIN-SUFFIX,jsd.cdn.zzko.cn,DIRECT"
 ]
